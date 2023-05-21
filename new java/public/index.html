@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Barry Bevs</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Barry Bevs</h1>
+  
+  <div id="order-form">
+    <h2>Order Form</h2>
+    <div class="form-group">
+      <label for="size">Size:</label>
+      <select id="size">
+        <option value="small" selected>Small - 2.50</option>
+        <option value="medium">Medium - 3.00</option>
+        <option value="large">Large - 3.55</option>
+        <option value="exlarge">Extra-Large - 4.20</option>
+      </select>
+    </div>
+  
+    <div class="form-group">
+      <label for="base">Base:</label>
+      <select id="base" onchange="toggleBaseOptions()">
+        <option value="smoothie">Smoothie</option>
+        <option value="milkshake">Milkshake</option>
+      </select>
+    </div>
+  
+    <div class="form-group" id="smoothie-base">
+      <label for="smoothie-base-select">Smoothie Base:</label>
+      <select id="smoothie-base-select">
+        <option value="applejuice" selected>Apple Juice</option>
+        <option value="orangejuice">Orange Juice</option>
+      </select>
+    </div>
+  
+    <div class="form-group" id="milkshake-base">
+      <label for="milkshake-base-select">Milkshake Base:</label>
+      <select id="milkshake-base-select">
+        <option value="semiskimmedmilk" selected>Semi Skimmed Milk</option>
+        <option value="wholemilk">Whole Milk</option>
+        <option value="skimmedmilk">Skimmed Milk</option>
+        <option value="soyamilk">Soya Milk</option>
+        <option value="oatmilk">Oat Milk</option>
+      </select>
+    </div>
+  
+    <div class="form-group">
+      <label for="ingredients">Ingredients:</label>
+      <div id="ingredients">
+        <input type="checkbox" id="banana" value="banana">
+        <label for="banana">Banana</label>
+  
+        <input type="checkbox" id="mango" value="mango">
+        <label for="mango">Mango</label>
+  
+        <input type="checkbox" id="raspberries" value="raspberries">
+        <label for="raspberries">Raspberries</label>
+  
+        <input type="checkbox" id="cherries" value="cherries">
+        <label for="cherries">Cherries</label>
+
+        <input type="checkbox" id="passionfruit" value="passionfruit">
+        <label for="cherries">Passion Fruit</label>
+
+        <input type="checkbox" id="chocolate" value="chocolate">
+        <label for="cherries">Chocolate</label>
+        
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="toppings">Toppings:</label>
+      <div id="toppings">
+        <input type="checkbox" id="none" value="none">
+        <label for="none">None</label>
+  
+        <input type="checkbox" id="malt" value="malt">
+        <label for="malt">Malt</label>
+  
+        <input type="checkbox" id="marshmallows" value="marshmallows">
+        <label for="marshmallows">Marshmallows</label>
+  
+        <input type="checkbox" id="whippedcream" value="whippedcream">
+        <label for="whippedcream">Whippedcream</label>
+
+        <input type="checkbox" id="baileys" value="baileys">
+        <label for="baileys">Baileys</label>
+
+        <input type="checkbox" id="flake" value="flake">
+        <label for="flake">Flake</label>
+        
+      </div>
+    </div>
+    <div id="saved-order">
+      <h2>Saved Order</h2>
+      <p id="saved-order-details"></p>
+      <button id="saved-order" onclick="saveOrder() ">save to Order</button>
+    </div>
+
+    <button id="submit-btn" onclick="calculatePrice()">Calculate Price</button>
+
+    <p id="result"></p>
+
+  <script src="main.js"></script>
+</body>
+</html>

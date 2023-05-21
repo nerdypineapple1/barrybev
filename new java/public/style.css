@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+#order-form {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+select,
+input[type="checkbox"] {
+  margin-top: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#order-summary {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#order-summary h2 {
+  margin-top: 0;
+}
+
+#order-summary p {
+  margin-bottom: 10px;
+}
+
+#order-summary p:last-child {
+  margin-bottom: 0;
+}
+
+#order-summary p strong {
+  font-weight: bold;
+}
+
+#order-summary p span {
+  font-style: italic;
+}
+
+#order-form {
+  background-color:mintcream;
+}
+#ingredients {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#ingredients input[type="checkbox"],
+#ingredients label {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#toppings {
+  display: flex;
+  flex-wrap: wrap;
+}
+#toppings input[type="checkbox"],
+#ingredients label {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
